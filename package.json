@@ -1,0 +1,24 @@
+{
+  "name": "unicode-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vidhan123/Unicode-Backend.git"
+  },
+  "author": "Vidhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vidhan123/Unicode-Backend/issues"
+  },
+  "homepage": "https://github.com/Vidhan123/Unicode-Backend#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1"
+  }
+}
