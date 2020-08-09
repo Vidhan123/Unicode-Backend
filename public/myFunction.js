@@ -1,4 +1,4 @@
-const myFunction = (inputList) => {
+module.exports = (inputList) => {
   const myList = [];
 
   for(let i=0;i<inputList.length;i++) {
@@ -15,7 +15,6 @@ const myFunction = (inputList) => {
   };
 
   myList.sort((a,b) => (a.Score.Maths+a.Score.English)<(b.Score.Maths+b.Score.English)?1:-1);
-  console.log(myList)
+  
+  return myList
 };
-
-myFunction(["Rashmil Panchani 99 97", "Parag Vaid 95 93", "Siddharth Sanghavi 98 100"]);

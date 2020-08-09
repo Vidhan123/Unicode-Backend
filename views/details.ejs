@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Form</title>
+  <link href="/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center align-items-center">
+      <div class="card border-info mt-5 bg-light" style="max-width: 30rem;">
+        <div class="card-body">
+          <h3 class="card-title mb-5" style="text-align: center;">Student Results</h3>
+            <table class="table table-success">
+              <thead class="thead-dark">
+                <th>Full Name</th>
+                <th>Math Score</th>
+                <th>English Score</th>
+              </thead>
+              <tbody>
+                <% data.forEach((item) => { %>
+                  <tr>
+                    <td><%= item.Name %></td>
+                    <td><%= item.Score.Maths %></td>
+                    <td><%= item.Score.English %></td>
+                  </tr>
+                <% }); %>
+              </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
