@@ -1,3 +1,4 @@
+// Replace module.exports with a Function name for testing the function
 module.exports = (inputList) => {
   const myList = [];
 
@@ -13,8 +14,11 @@ module.exports = (inputList) => {
       }
     });
   };
-
-  myList.sort((a,b) => (a.Score.Maths+a.Score.English)<(b.Score.Maths+b.Score.English)?1:-1);
   
+  myList.sort((a,b) => (a.Score.Maths + a.Score.English) < (b.Score.Maths + b.Score.English) ? 1 : -1);
+  // console.log(myList);
   return myList
 };
+
+// const a = ["Rashmil Panchani 99 97", "Parag Vaid 95 93", "Siddharth Sanghavi 98 100"]; 
+// myFunction(a);

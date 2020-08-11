@@ -1,7 +1,6 @@
 const express = require('express');
 const http = require('http');
 const fetchJoke = require('./fetchJoke');
-const { nextTick } = require('process');
 
 const hostname = 'localhost';
 const port = 3000;
